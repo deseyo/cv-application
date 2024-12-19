@@ -2,7 +2,7 @@ import { createContext, useContext } from "react";
 
 export const ComponentsStateContext = createContext(undefined);
 
-export function useComponentsStateContext() {
+export const useComponentsStateContext = () => {
   const components = useContext(ComponentsStateContext);
   
   if (components === undefined) {
@@ -14,7 +14,7 @@ export function useComponentsStateContext() {
 
 export const ChildContext = createContext(undefined);
 
-export function useChildElementContext() {
+export const useChildElementContext = () => {
   const child = useContext(ChildContext);
   
   if (child === undefined) {

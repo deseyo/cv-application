@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useComponentsStateContext } from "../Context";
 
-function Preview({id="", item, children}) {
+const Preview = ({id="", item, children}) => {
   const [deleteTimer, setDeleteTimer] = useState(null);
   const [styleTimer, setStyleTimer] = useState(null);
   const [isActive, setIsActive] = useState(false);

@@ -1,4 +1,4 @@
-export default function FormSection({childIndex, value, name, label=name.charAt(0).toUpperCase() + name.slice(1), placeholder, state, stateFunction}) {
+const FormSection = ({childIndex, value, name, label=name.charAt(0).toUpperCase() + name.slice(1), placeholder, state, stateFunction}) => {
   return (
     <div className="form-section">
       <label className="label" htmlFor={name}><div className="section-text">{label}</div></label>
@@ -10,3 +10,5 @@ export default function FormSection({childIndex, value, name, label=name.charAt(
     </div>
   )
 }
+
+export default FormSection;

@@ -9,7 +9,7 @@ import Education from "./components/Education";
 import Work from "./components/Work";
 import './App.css';
 
-export default function App() {
+const App = () => {
   const [showWindow, setShowWindow] = useState(false);
   const [components, setComponents] = useState([{name: 'name', key: 0, editable: false}, {name: 'position', key: 1, editable: false}, {name: 'links', key: 2, editable: false}, {name: 'skills', key: 3, editable: false}, {name: 'work', key: 4, editable: false}, {name: 'education', key: 5, editable: false}, {name: 'about', key: 6, editable: false}])
   const [index, setIndex] = useState(7)
@@ -118,3 +118,5 @@ export default function App() {
     </ComponentsStateContext.Provider>
   )
 }
+
+export default App;

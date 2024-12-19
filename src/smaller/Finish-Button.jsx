@@ -1,6 +1,6 @@
 import { useComponentsStateContext } from "../Context";
 
-function FinishButton({item}) {
+const FinishButton = ({item}) => {
   const [components, setComponents] = useComponentsStateContext();
 
   function handleClick() {
@@ -14,4 +14,4 @@ function FinishButton({item}) {
   )
 }
 
-export default FinishButton
+export default FinishButton;
